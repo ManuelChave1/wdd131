@@ -150,11 +150,20 @@ main{
     padding: 5px;
     transition: background-color 0.5s  ease-in-out;
 }
+.card-links>ul>li> a
+{
+     color: blue; 
+}
+.card-links>ul>li a:active
+{
+     color: rgb(4, 4, 116); 
+}
 
-.card-links>ul>li a:hover
+.card-links>ul>li> a:hover
 {
      color: var(--hover); 
 }
+
 
 
 
