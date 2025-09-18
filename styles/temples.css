@@ -29,15 +29,16 @@ body{
 header{
     grid-area: header;
     border: 2px solid orange;
- 
+  
 }
 .title{
     margin: 30px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     align-self: center;
 }
 
 header nav{
+   
     display: none;
 }
 header>nav ul{
