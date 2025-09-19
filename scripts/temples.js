@@ -5,7 +5,7 @@ let title = document.querySelector(".title");
 
 function updateLayout() {
   if (window.innerWidth <= 768) {
-
+    
     nav.style.display = menu.classList.contains("open") ? "block" : "none";
     title.style.display = menu.classList.contains("open") ? "none" : "block";
   } else {
