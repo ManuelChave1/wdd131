@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+    main {
+        min-height: 100vh;
+        background: url('../images/portugal-city-landscape.webp')
+                    no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .image{
+        display: none;
+    }
+    .cards{
+        padding: 0px;
+        width: 350px;
+        margin: 10px;
+    }
+    .data{
+        height: 320px;
+        border-bottom: none;
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+    .weather{
+        position:absolute;
+        bottom: -100px;
+        right: 30px;
+    }
+    .weather>.card-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .weather img{
+        width: 100px;
+        height: 50px;    
+    }
+
+    .card-title{
+        height: 50px;
+        position: relative;
+        background-color:#534B48;
+        top: 10px;
+        right: 10px;
+    }
+    .card-content{
+        padding-top: 40px;
+    }
+    
+}

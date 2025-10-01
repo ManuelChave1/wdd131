@@ -6,8 +6,9 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Manuel Chave | Javascript|Media Query|HTML|CSS">
     <meta name="author" content="Manuel Chave ">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,15 +17,18 @@
 <body>
     <div class="conteinar">
     <header>
-        <h1>Mozambique</h1>
+        <h1>Portugal</h1>
     </header>
 
     <main>
       <div class="image">
-        <img src="images/Things-to-do-in-Tofo.webp" alt=" image of Tofo beach Mozambique">
+          <img src="images/portugal-train.webp" alt=" image of Tofo beach Mozambique">
       </div>
-      <div class="data">
+      <div class="data cards">
+        <div class="card-title"> 
         <h2>Data</h2>
+        </div>
+        <div class="card-content">
         <p><span>Area :</span>  <span>9 km²</span></p>
         <p><span>Population :</span> <span>15.000</span></p>
         <p><span>Capital :</span>  <span>Inhambane,Jangamo</span></p>
@@ -33,13 +37,19 @@
         <p><span>Time Zone :</span>  <span>UTC +2 CAT</span></p>
         <p><span>Calling Code :</span>  <span>+258</span></p>
         <p><span>Internet TLD :</span> <span>.mg</span></p>
+        </div>
       </div>
-      <div class="weather">
+      <div class="weather cards">
+        <div class="card-title">
+          <h2>Weather</h2>
         <img src="images/sunny_icon.svg" alt=" image of Sunny  weather icon">
+        </div>
+        <div class="card-content">
        <p><span>Temperature : </span> <span>10ºC</span></p>
        <p><span>Conditions : </span> <span>Cloud</span></p>
        <p><span>Wind : </span> <span>7.4</span></p>
        <p><span>Wind Chill : </span> <span>5.4</span></p>
+       </div>
       </div>
     </main>
     <footer>
