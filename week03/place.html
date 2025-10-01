@@ -21,9 +21,10 @@
     </header>
 
     <main>
-      <div class="image">
-          <img src="images/portugal-train.webp" alt=" image of Tofo beach Mozambique">
-      </div>
+      <picture class="image">
+          <source srcset="images/nazare-portugal.webp" media="(min-width:500px)">
+          <img src="images/portugal-train.webp" alt=" Portugal train ">
+      </picture>
       <div class="data cards">
         <div class="card-title"> 
         <h2>Data</h2>
@@ -45,10 +46,10 @@
         <img src="images/sunny_icon.svg" alt=" image of Sunny  weather icon">
         </div>
         <div class="card-content">
-       <p><span>Temperature : </span> <span>10ºC</span></p>
-       <p><span>Conditions : </span> <span>Cloud</span></p>
-       <p><span>Wind : </span> <span>7.4</span></p>
-       <p><span>Wind Chill : </span> <span>5.4</span></p>
+       <p><span>Temperature : </span> <span id="temperature">10ºC</span></p>
+       <p><span>Conditions : </span> <span id="conditions">Cloud</span></p>
+       <p><span>Wind : </span> <span id="windspeed">7.4</span></p>
+       <p><span>Wind Chill : </span> <span id="windchill">5.4</span></p>
        </div>
       </div>
     </main>
