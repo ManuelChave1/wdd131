@@ -88,6 +88,14 @@ header>nav ul a:hover{
     font-size: 50px;
     color: #fff;
 }
+.fa-beat, .fa-beat-fade, .fa-fade, .fa-flip, .fa-spin {
+  animation-delay: 0s !important; 
+}
+
+.fa-rotate-by {
+  transform: rotate(0deg) !important; 
+}
+
 
 main{
       grid-area: main;
