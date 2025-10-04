@@ -35,8 +35,7 @@
         align-items: center;
     }
     .weather img{
-        width: 100px;
-        height: 50px;    
+       display: none; 
     }
 
     .card-title{
@@ -46,7 +45,14 @@
         top: 10px;
         right: 10px;
     }
-    .card-content{
+    .card-title h2::after {
+        content: url("../images/sun.webp");
+        margin-left: 8px;
+        width: 100px;
+        height: 50px;
+        
+    }
+        .card-content{
         padding-top: 40px;
     }
     
