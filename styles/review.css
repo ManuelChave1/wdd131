@@ -1,0 +1,41 @@
+
+    .confirm {
+      max-width:720px;
+      margin:18px auto;
+      padding:20px;
+      background:#fff;
+      border-radius:8px;
+      box-shadow:0 10px 22px rgba(0,0,0,0.05);
+    }
+    .confirm h2{
+        color:var(--accent);margin:0 0 8px 0
+    }
+    .summary {
+        margin-top:12px;
+    }
+    .summary dt{
+        font-weight:700
+    }
+    .summary dd{
+        margin:0 0 12px 0;
+        color:#333
+    }
+    .counter {
+        margin-top:18px;
+        padding:12px;
+        border-radius:8px;
+        background: #0f6b66; 
+        color:white;
+        font-weight:700;
+        text-align:center
+    }
+    .home-link{
+        display:inline-block;
+        margin-top:14px;
+        padding:10px 12px;
+        border-radius:8px;
+        border:1px solid var(--accent);
+        text-decoration:none;
+        color:var(--accent);
+        background:white
+    }

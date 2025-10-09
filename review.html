@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Manuel Chave | Learn JavaScript basics">
+    <meta name="author" content="Manuel Chave ">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/review.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 131 – Dynamic Web Fundamentals – Manuel Chave</title>
+</head>
+<body>
+  <header>
+    <h1>Thank you!</h1>
+  </header>
+
+  <main class="container">
+    <section class="confirm card" id="confirmation">
+      <h2>Review Submitted Successfully</h2>
+      <p id="message">Below is a summary of your submission.</p>
+
+      <dl class="summary">
+        <dt>Product</dt>
+        <dd id="outProduct"></dd>
+
+        <dt>Overall Rating</dt>
+        <dd id="outRating"></dd>
+
+        <dt>Date of Installation</dt>
+        <dd id="outDate"></dd>
+
+        <dt>Useful Features</dt>
+        <dd id="outFeatures"></dd>
+
+        <dt>Written Review</dt>
+        <dd id="outText"></dd>
+
+        <dt>Your Name</dt>
+        <dd id="outName"></dd>
+      </dl>
+
+      <div class="counter" id="counterBox">You have submitted <span id="count">0</span> reviews.</div>
+
+      <a class="home-link" href="form.html">Submit another review</a>
+    </section>
+  </main>
+
+    <footer>
+        <span class="copyright"></span> - Manuel Chave - Mozambique <br>
+        <p class="lastModification"></p>
+    </footer>

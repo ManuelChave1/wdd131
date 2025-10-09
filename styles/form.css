@@ -1,0 +1,160 @@
+:root{
+  --bg: #f5fbfb;
+  --panel: #eef6f5;
+  --accent: #0f6b66;      
+  --accent-2: #ea6f63;     
+  --muted: #6b6b6b;
+  --card-border: rgba(15,107,102,0.12);
+  --radius: 8px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+*{
+    box-sizing:border-box
+}
+
+body{
+  margin:0;
+  background: var(--bg);
+  color:#222;
+}
+
+
+header{
+  background: var(--accent);
+  color: #fff;
+  padding: 28px 16px;
+  text-align:center;
+}
+header h1{margin:0;font-size:28px;letter-spacing:0.5px}
+
+
+.container{
+  padding: 18px;
+  max-width: 720px;
+  margin: 20px auto;
+}
+
+
+.card{
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: 18px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 6px 18px rgba(11,11,11,0.04);
+}
+
+
+.field-label{
+  display:block;
+  font-weight:700;
+  margin-bottom:8px;
+  color:var(--accent-2);
+  font-size:18px;
+}
+.hint{
+    font-weight:400;
+    color:var(--muted);
+    font-size:13px;
+    margin-left:6px
+    }
+
+select, input[type="date"], input[type="text"], textarea{
+  width:100%;
+  padding:12px 14px;
+  border-radius:6px;
+  border:1px solid rgba(0,0,0,0.12);
+  font-size:16px;
+  background:#fff;
+  margin-bottom:6px;
+}
+
+
+.rating-row{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  justify-content:flex-start;
+  flex-wrap:wrap;
+}
+.rating-row input[type="radio"]{
+  display:none;
+}
+.star{
+  display:inline-block;
+  font-size:20px;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  cursor:pointer;
+  min-width:68px;
+  text-align:center;
+  user-select:none;
+}
+
+.checkbox-row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:8px;
+}
+.rating-row input[type="radio"]:checked + label{
+  background: var(--accent-2);
+  color:white;
+  border-color: rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+
+.checkbox-row input[type="checkbox"]{
+  width:20px;
+  height:20px;
+  margin-right:8px;
+}
+
+.btn-submit{
+  display:block;
+  width:100%;
+  padding:16px;
+  font-size:20px;
+  font-weight:700;
+  border-radius:8px;
+  background: white;
+  border:2px solid var(--accent);
+  color:var(--accent);
+  cursor:pointer;
+  margin-top:6px;
+}
+.btn-submit:hover{
+     background:var(--accent); color:#fff; 
+    }
+
+footer{
+  text-align:center;
+  padding:20px 12px;
+  margin-top:18px;
+  background:var(--accent);
+  color:white;
+}
+footer p{
+    margin:4px 0
+}
+
+
+.space{
+    height:12px
+    }
+
+@media(min-width:720px){
+  .container{
+    padding:30px
+    }
+  .card{
+    padding:28px
+    }
+  .rating-row .star{
+    font-size:22px;
+    min-width:88px
+    }
+}
