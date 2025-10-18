@@ -177,6 +177,9 @@ section{
   grid-template-columns: 1fr 320px;
   gap:1.5rem;
 }
+.requered{
+  color: #FF0000;
+}
 .form-row{ 
   margin-bottom:0.75rem;
  }
