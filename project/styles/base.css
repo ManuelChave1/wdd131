@@ -1,0 +1,239 @@
+
+:root{
+  --orange: #D35400;
+  --yellow: #F4D03F;
+  --green: #27AE60;
+  --dark-blue: #2C3E50;
+  --light-gray: #ECF0F1;
+  --max-width: 1100px;
+}
+
+* { 
+    box-sizing: border-box; 
+}
+
+body{
+  margin:0;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--light-gray);
+  color: var(--dark-blue);
+  line-height:1.5;
+}
+
+.container{
+  width:90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header{
+  background: var(--orange);
+  color: #fff;
+  padding: 0.75rem 0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo a{
+  color: #fff;
+  text-decoration:none;
+  font-family: "Poppins", sans-serif;
+  font-weight:700;
+  font-size:2rem;
+}
+.main-nav .nav-list{
+  list-style:none;
+  margin-top: 12px;
+  padding:0;
+  display:flex;
+  gap:1rem;
+  width: 150px;
+}
+
+.nav-list >li a{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  text-decoration:none;
+  font-weight:500;
+  transition: all 0.6s ease-in-out;
+ 
+}
+.nav-list >li a:hover{
+  background-color: #27AE60;
+}
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:none;
+  color:#fff;
+  font-size:1.25rem;
+}
+.nav-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+ .nav-toggle::before{
+    content: "☰";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+} 
+
+.nav-toggle.open::before{
+    content: "✕";
+    font-family:"Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+}
+
+.hero{
+  background-image: linear-gradient(0deg, rgba(44,62,80,0.2), rgba(44,62,80,0.2)), url('../images/plate1.avif');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:3.5rem 0;
+  text-align:center;
+}
+.hero-inner h1{
+  color:var(--green);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.hero .lead{
+  max-width: 720px;
+  margin:0.5rem auto 1.5rem auto;
+  font-size: 1.2rem;
+}
+
+.btn{
+  display:inline-block;
+  padding:0.5rem 0.9rem;
+  border-radius:6px;
+  border:2px solid transparent;
+  text-decoration:none;
+  font-weight:600;
+  cursor:pointer;
+}
+.btn.primary{
+  background: var(--orange);
+  color:#fff;
+}
+.btn:hover{ 
+  opacity:0.85;
+  background-color:var(--green); 
+
+}
+
+section{
+  margin:1.5rem 0;
+}
+.grid{
+  display:grid;
+  gap:1rem;
+}
+.highlights .grid{
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+.menu-grid{
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+.card{
+  background:#fff;
+  padding:1rem;
+  border-radius:10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.favorites .card{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+
+.contact-section{
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap:1.5rem;
+}
+.form-row{ 
+  margin-bottom:0.75rem;
+ }
+label{ 
+  display:block; 
+  font-weight:600; 
+  margin-bottom:0.25rem;
+ }
+
+input, select, textarea{
+  width:100%;
+  padding:0.5rem;
+  border:1px solid #ddd;
+  border-radius:6px;
+  font-size:1rem;
+}
+.form-row button{ 
+  border:none; 
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  background: var(--dark-blue);
+  color:white;
+  padding:1rem 0;
+}
+.footer-content{
+    text-align: center; 
+    height: 100px;
+}
+
+
+@media screen and (max-width: 800px){
+  .contact-section{ 
+    grid-template-columns: 1fr;
+   }
+  .nav-toggle{ 
+    display: inline-block; 
+  }
+  .main-nav .nav-list{ 
+    flex-direction:column; 
+    gap:0.5rem; 
+    position:absolute; 
+    right:0.5rem; 
+    top:60px; 
+  }
+
+  .hero{ 
+    padding:2rem 0; 
+  }
+}
+@media screen and (min-width: 800px){
+  .nav-list >li a{
+    width: 80px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sabores da Matola — traditional Mozambican flavors. View the menu, make reservations, and favorite dishes.">
+    <meta name="author" content="Manuel Chave ">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/site.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Sabores da Matola</title>
+
+</head>
+<body>
+    <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="Sabores da Matola logo">
+        <a href="index.html">Sabores da Matola</a>
+      </div>
+
+      <nav class="main-nav">
+        <button  class="nav-toggle"></button>
+        <ul id="primaryMenu" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 >Welcome to Sabores da Matola</h1>
+        <p class="lead">Authentic Mozambican flavors — fresh ingredients, warm hospitality.</p>
+        <p><a class="btn primary" href="menu.html">See the Menu</a> <a class="btn primary" href="contact.html">Reserve a Table</a></p>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container">
+        <h2>Featured Dishes</h2>
+        <div id="featuredCards" class="grid">
+          <!-- render featured dish cards from js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="about container" >
+      <h2 id="aboutTitle">About Us</h2>
+      <p>Sabores da Matola celebrates traditional Mozambican dishes with a contemporary touch. 
+        We use local ingredients and time-honored recipes to deliver memorable meals.</p>
+    </section>
+  </main>
+      <footer>
+        <div class="container footer-content">
+            <p>📍 Matola, Mozambique • 📞 +258 856656243</p>
+       <p><span class="copyright"></span> <span id="year"></span> Sabores da Matola</p>
+        </div>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact & Reservations — Sabores da Matola. Make a reservation online." />
+    <meta name="author" content="Manuel Chave ">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/site.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Sabores da Matola</title>
+</head>
+<body>
+    <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" aria-label="Sabores da Matola logo">
+        <a href="index.html">Sabores da Matola</a>
+      </div>
+
+      <nav class="main-nav">
+        <button  class="nav-toggle"></button>
+        <ul id="primaryMenu" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container contact-section">
+      <h1>Contact & Reservations</h1>
+      <p class="lead">Use the form to reserve a table. All fields are required.</p>
+
+      <form id="reservationForm" novalidate>
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone (example: +258856656243)</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="date">Reservation date</label>
+          <input id="date" name="date" type="date" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="people">Number of people</label>
+          <input id="people" name="people" type="number" min="1" max="20" value="2" required aria-required="true" />
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send Reservation</button>
+        </div>
+
+        <div id="formMessage" ></div>
+      </form>
+
+      <aside class="contact-info" >
+        <h2 id="contactInfoTitle">Visit Us</h2>
+        <p>Address: Bairro Central, Matola, Maputo Province, Mozambique</p>
+        <p>Phone: +258 856656243 (WhatsApp available)</p>
+        <p>Hours: Tue–Sun 11:00–22:00 (closed Mondays)</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+        <p>📍 Matola, Mozambique • 📞 +258 856656243</p>
+    <p><span class="copyright"></span> <span id="year"></span> Sabores da Matola</p>
+    </div>
+</footer> 
+    
+</body>
+</html>
